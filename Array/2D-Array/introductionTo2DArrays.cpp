@@ -21,7 +21,6 @@ int main()
             // ans += arr[i][j];
         }
         cout << endl;
-        // cout << ans << " ";
 
         // ans = 0;
     }

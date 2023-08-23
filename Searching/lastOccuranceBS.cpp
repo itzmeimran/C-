@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int firstOccurance(vector<int> arr, int target, int start, int end)
+int lastOccurance(vector<int> arr, int target, int start, int end)
 {
     int mid = start + (end - start) / 2;
     int ans = mid;
@@ -11,8 +11,8 @@ int firstOccurance(vector<int> arr, int target, int start, int end)
         if (arr[mid] == target)
         {
             ans = mid;
-            //Because of first Occurance we have to search in left section not in right
-            end = mid - 1;
+            //Because of first Occurance we have to search in right section not in left
+            start = mid + 1;
         }
         else if (arr[mid] < target)
         {
@@ -33,6 +33,6 @@ int main()
     int target = 7;
     int start = 0;
     int end = arr.size() - 1;
-    int ans = firstOccurance(arr, target, start, end);
-    cout << "first occurance is at index : " << ans;
+    int ans = lastOccurance(arr, target, start, end);
+    cout << "last occurance is at index : " << ans;
 }

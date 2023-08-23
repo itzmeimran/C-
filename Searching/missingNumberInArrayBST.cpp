@@ -26,7 +26,7 @@ int findMissing(vector<int> arr, int start, int end)
 
 int main()
 {
-    vector<int> arr = {1, 2, 3, 4, 5, 7, 8,9,10};
+    vector<int> arr = {1, 2, 3, 4, 5, 6, 7,8,9};
     int start = 0;
     int end = arr.size() - 1;
     int result = findMissing(arr, start, end);

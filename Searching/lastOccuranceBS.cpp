@@ -5,13 +5,13 @@ using namespace std;
 int lastOccurance(vector<int> arr, int target, int start, int end)
 {
     int mid = start + (end - start) / 2;
-    int ans = mid;
+    int ans = mid; 
     while (start <= end)
     {
         if (arr[mid] == target)
         {
             ans = mid;
-            //Because of first Occurance we have to search in right section not in left
+            //Because of last Occurance we have to search in right section not in left
             start = mid + 1;
         }
         else if (arr[mid] < target)

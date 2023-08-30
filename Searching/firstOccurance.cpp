@@ -11,7 +11,9 @@ int firstOccurance(vector<int> arr, int target, int start, int end)
         if (arr[mid] == target)
         {
             ans = mid;
+
             //Because of first Occurance we have to search in left section not in right
+            
             end = mid - 1;
         }
         else if (arr[mid] < target)

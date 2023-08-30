@@ -24,7 +24,7 @@ int main(){
         }
 
         //Updating mid value
-        mid = (start+end)/2;
+        mid =start+(end-start)/2;
     }
     return 0;
 }

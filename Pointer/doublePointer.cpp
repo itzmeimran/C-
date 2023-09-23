@@ -10,11 +10,12 @@ int main()
     cout << "variable is : " << a << endl;
 
     int *p = &a; // Pointer to varaible int 'a'
-
+    
     cout << "&a ---> " << &a << endl;
-    cout << "&p ---> " << &p << endl; 
     cout << "p ---> " << p << endl;
+    cout << "&p ---> " << &p << endl; 
     cout << "*p ---> " << *p << endl;
+    cout << "size of p ---> " << sizeof(p) << endl;
      
     int **q = &p; // Pointer to pointer int a  ;
 
@@ -22,4 +23,8 @@ int main()
     cout << "&q ---> " << &q << endl;
     cout << "*q ---> " << *q << endl;
     cout << "**q ---> " << **q << endl;
+
+    int arr[] = {1,2,3,4};
+    int *ptr = arr++;
+    cout << *ptr << endl;
 }                                  

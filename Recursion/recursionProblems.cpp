@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 #include <limits.h>
 
 using namespace std;

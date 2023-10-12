@@ -17,6 +17,8 @@ public:
     }
 };
 
+
+
 int main()
 {
     Student Imran, Irfan, Arif;
@@ -27,6 +29,15 @@ int main()
     Arif.name = "Shaik mohammad arif";
     Arif.age = 18;
 
-    Imran.printName();
+    Student *Jacob = new Student; //creating a new entry in Dynamic memory
+    Jacob->name = "Jacob";
+    Jacob->age = 30;
+    
+    // Printing the names of all students using function pointers
+    Jacob->printName(); // instead of using  . we are using -> to print a function as it is alloted using dynamic memory;
+    Jacob->printAge(); // instead of using  . we are using -> to print a function as it is alloted using dynamic memory; 
+    Imran.printName(); 
     Imran.printAge();
+
+
 }

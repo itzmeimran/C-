@@ -79,9 +79,16 @@ public: // functions
     }
 };
 
+void reverseString(char str){
+    while(!str.empty()){
+        cout << str[top] << " " << endl;
+        str.pop();
+    }
+}
 int main()
 {
     stack<int> st;
+    stack<char>string;
     int arr[] = {10, 20, 30, 40, 50};
     for (int i = 0; i < 5; i++)
     {
@@ -96,7 +103,8 @@ int main()
         cout << st.top() << " ";
         st.pop();
     }
-
+    char str = 'imran';
+    reverseString(str);
     
     return 0;
 }
